@@ -1,0 +1,14 @@
+{
+  "name": "test5",
+  "version": "1.0.0",
+  "description": "My first galp project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Papazhora",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
