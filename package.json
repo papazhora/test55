@@ -9,7 +9,14 @@
   "author": "Papazhora",
   "license": "ISC",
   "devDependencies": {
+    "browser": "^0.2.6",
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.2.1"
-  }
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-update": "0.0.2",
+    "sync": "^0.2.5"
+  },
+  "dependencies": {}
 }
