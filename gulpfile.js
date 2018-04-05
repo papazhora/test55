@@ -1,6 +1,28 @@
+import { Stream } from 'stream';
+
 var gulp = require('gulp')
     concat = require('gulp-concat')
-    uglify = require('gulp-uglifyjs');
+    uglify = require('gulp-uglifyjs')
+    sass   = require('gulp-sass')
+    // browserSync = require('browser-sync');
+
+
+// gulp.task('browserSync', function() {
+//     browserSync({
+//         server: {
+//             baseDir: 'app'
+//         },
+//         notify: false
+//     })
+// });
+
+
+gulp.task('sass', function() {
+    return gulp.src('app/sass/**/*.sass')
+    .pipe(sass())
+    .pipe(gulp.dest('app/css'))
+    // .pipe(browserSync.reload())
+});
 
 
 gulp.task('scripts', function(){
@@ -12,6 +34,10 @@ gulp.task('scripts', function(){
     .pipe(uglify())
     .pipe(gulp.dest('app/js'));
 
+});
+
+gulp.task('watch', function() {
+    gulp.watch('app/sass/**/*.sass', ['sass'])
 });
 
 

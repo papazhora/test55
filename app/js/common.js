@@ -1,6 +1,6 @@
 $(function() {
 
-$('body').fadeOut();
+// $('body').fadeOut();
 
 
 
